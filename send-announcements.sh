@@ -47,6 +47,7 @@ sample_data="{\"fields\": {\"project\": {\"key\": \"$sample_key\"},\"summary\": 
 
 sample_res=$(curl -u username:password -X POST --data "${sample_data}" -H "Content-Type:application/json" https://support-staging.wso2.com/jira/rest/api/2/issue/)
 
+echo
 echo $sample_res
 echo
 echo "Sample ticket created. Please confirm by checking the ticket by logging in to your JIRA account."
